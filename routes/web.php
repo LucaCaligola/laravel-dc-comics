@@ -19,9 +19,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/', function () {
-    $comics = config('db.comic');
-    return view('layout.app', ['products' => $comics]);
-});
+Route::get('/comic', [ComicController::class, 'index'])->name('comic.index');
 
-Route::resouce('comics', ComicController::class);
+
