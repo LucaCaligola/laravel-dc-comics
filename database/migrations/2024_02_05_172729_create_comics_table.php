@@ -11,8 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('comics', function (Blueprint $table) {
+           Schema::create('comics', function (Blueprint $table) {
             $table->id();
+            $table->string('title', 50);
+            $table->text('description');
+            $table->text('thumb');
+            $table->string('price', 50);
+            $table->string('series', 50);
+            $table->date('sale_date', 50);
+            $table->string('type', 40);
             $table->timestamps();
         });
     }
