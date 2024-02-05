@@ -1,0 +1,49 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+li {
+    padding-right: 30px;
+}
+
+.logo {
+    width: 100px;
+    padding-right: 30px;
+}
+
+
+
+.background img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+  
+}
+
+.background-dark {
+
+    background-color: #1C1C1C;
+    width: 100%;
+    
+}
+
+.titoli img {
+    object-fit: cover;
+    height: 200px;
+}
+
+.bg-blue {
+    background-color: #0182F9;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+.barra{
+    background-color: #0182F9;
+    height: 100px;
+}
+
+.loghi img {
+    width: 50px;
+    height: 50px;
+}
