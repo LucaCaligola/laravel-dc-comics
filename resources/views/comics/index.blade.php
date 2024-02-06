@@ -20,6 +20,7 @@
     </div>
 
     <div class="background-dark">
+        
          
 
         <div class="container">
@@ -34,18 +35,21 @@
                 <div class="col-2 mt-3">
                     <a href="{{ route('comics.show', $comic->id) }}">
 
-                    <div class="titoli">
-                        <img src=" {{ $comic['thumb'] }}" alt="" class="w-100">
-                        <p class="text-white">
-                            {{ $comic['title'] }}
-                        </p>
+                        <div class="titoli">
+                            <img src=" {{ $comic['thumb'] }}" alt="" class="w-100">
+                            <p class="text-white">
+                                {{ $comic['title'] }}
+                            </p>
 
-                    </div>
+                        </div>
+                    </a>
                 </div>
                 @endforeach
             </div>
             <div class="text-white pt-3 text-center">
-                <button class="bg-blue text-center">LOAD MORE</button>
+                <a href="{{ route('comics.create', $comic->id) }}">
+
+                <button class="bg-blue text-center">ADD COMIC</button>
             </div>
         </div>
 

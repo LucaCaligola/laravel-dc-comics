@@ -1,6 +1,18 @@
-@extends('pages.index')
 
-@section('main-content')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Comics</title>
+
+    @vite('resources/js/app.js')
+
+  
+</head>
+<body>
+
+
     <section class="form-container container">
         <div class="row justify-content-center">
             <div class="col-6">
@@ -14,7 +26,7 @@
                         <label for="titolo"class="form-label">
                             Titolo del Fumetto:
                         </label>
-                        <input type="text" name="title" id="title class="form-control">
+                        <input type="text" name="title" id="title" class="form-control">
                     </div>
 
                     <div class="mb-3">
@@ -58,4 +70,7 @@
             </div>
         </div>
     </section>
-@endsection
+
+
+</body>
+</html>
