@@ -35,22 +35,22 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="cottura"class="form-label">Descrizione:</label>
+                        <label for="description"class="form-label">Descrizione:</label>
                         <input type="text" name="description" id="description" class="form-control">
                     </div>
 
                     <div class="mb-3">
-                        <label for="peso"class="form-label">Prezzo:</label>
+                        <label for="price"class="form-label">Prezzo:</label>
                         <input type="text" name="price" id="price" class="form-control">
                     </div>
 
                     <div class="mb-3">
-                        <label for="src"class="form-label">Serie</label>
+                        <label for="series"class="form-label">Serie</label>
                         <input type="text" name="series" id="series" class="form-control">
                     </div>
 
                     <div class="mb-3">
-                        <label for="descrizione"class="form-label">Data di ventida:</label>
+                        <label for="sale_date"class="form-label">Data di ventida:</label>
                         <textarea type="text" name="sale_date" id="sale_date" class="form-control"
                         rows="4">
                         </textarea>

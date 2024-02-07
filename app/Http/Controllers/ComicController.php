@@ -55,15 +55,27 @@ class ComicController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $comic = Comic::findOrFail($id);
+        return view('comics.edit', compact('comic'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+        $request->validate([
+            'title' => ['required', 'min:4', 'max:40'],
+            'series' => ['required', 'min:1', 'max:30'],
+            'price' => ['required', 'min:1', 'max:15'],
+            'description' => ['required', 'min:10', 'max:2000'],
+            'thumb' => ['required', 'min:4', 'url:http,https'],
+            'sale_date' => ['required'],
+            'type' => ['required', 'min:1', 'max:25'],
+        ], [
+            'title.required' => 'Non va bene, inserisci un titolo'
+        ]);
+        $data = $request->all();
     }
 
     /**

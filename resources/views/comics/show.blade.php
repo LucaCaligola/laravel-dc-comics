@@ -46,6 +46,14 @@
                                         {{ $comic->description }}
                                     </p>
                                 </div>
+
+                                <a href="{{ route('comics.edit', $comic->id) }}">
+                                    <button class="btn btn-primary">
+                                        Modifica il fumetto
+                                    </button>
+                                </a>
+
+
                             </div>
                         </div>
                     </div>

@@ -49,7 +49,8 @@
             <div class="text-white pt-3 text-center">
                 <a href="{{ route('comics.create', $comic->id) }}">
 
-                <button class="bg-blue text-center">ADD COMIC</button>
+                    <button class="bg-blue text-center">ADD COMIC</button>
+                </a>
             </div>
         </div>
 
