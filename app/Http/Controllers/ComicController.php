@@ -76,7 +76,12 @@ class ComicController extends Controller
             'title.required' => 'Non va bene, inserisci un titolo'
         ]);
         $data = $request->all();
+
+        $comic->update($data);
+
+        return redirect()->route('comics.show', $comic->id);
     }
+    
 
     /**
      * Remove the specified resource from storage.
