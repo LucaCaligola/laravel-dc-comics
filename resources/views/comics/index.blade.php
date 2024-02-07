@@ -37,7 +37,7 @@
 
                         <div class="titoli">
                             <img src=" {{ $comic['thumb'] }}" alt="" class="w-100">
-                            <p class="text-white">
+                            <p class="text-white text-center">
                                 {{ $comic['title'] }}
                             </p>
 
